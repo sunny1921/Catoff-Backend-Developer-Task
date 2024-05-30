@@ -1,73 +1,88 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+NestJS CRUD Project
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This project is a basic CRUD (Create, Read, Update, Delete) application built using NestJS, a progressive Node.js framework for building efficient and scalable server-side applications.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Table of Contents
 
-## Description
+NestJS CRUD Project
+Table of Contents
+Description
+Installation
+Running the Application
+Scripts
+Dependencies
+License
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+Description
+This project demonstrates the implementation of CRUD operations using NestJS with PostgreSQL as the database. It leverages Sequelize as the ORM and includes authentication using JWT.
 
-```bash
-$ npm install
-```
+Installation
+To get started with the project, follow these steps:
 
-## Running the app
+Clone the repository:
+git clone https://github.com/your-username/nestjs-crud.git
 
-```bash
-# development
-$ npm run start
+Navigate to the project directory:
+cd nestjs-crud
 
-# watch mode
-$ npm run start:dev
+Install the dependencies:
+npm install
 
-# production mode
-$ npm run start:prod
-```
+Set up the environment variables. Create a .env file in the root directory and add your configuration settings (example provided in .env.example if available).
 
-## Test
+Running the Application
 
-```bash
-# unit tests
-$ npm run test
+To run the application in development mode:
+npm run start:dev
 
-# e2e tests
-$ npm run test:e2e
+To build the application for production:
+npm run build
 
-# test coverage
-$ npm run test:cov
-```
+To start the application in production mode:
+npm run start:prod
 
-## Support
+Scripts
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Here are the main scripts available in the project:
 
-## Stay in touch
+build: Compiles the project.
+format: Formats the code using Prettier.
+start: Starts the application.
+start:dev: Starts the application in development mode with hot-reload.
+start:debug: Starts the application in debug mode.
+start:prod: Starts the application in production mode.
+lint: Lints the project using ESLint.
+test: Runs all tests.
+test:watch: Runs all tests in watch mode.
+test:cov: Runs tests and collects coverage information.
+test:debug: Runs tests in debug mode.
+test:e2e: Runs end-to-end tests.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Dependencies
 
-## License
+The main dependencies used in this project are:
 
-Nest is [MIT licensed](LICENSE).
+@nestjs/common
+@nestjs/config
+@nestjs/core
+@nestjs/jwt
+@nestjs/platform-express
+@nestjs/sequelize
+@nestjs/swagger
+bcrypt
+class-transformer
+class-validator
+passport
+passport-jwt
+pg
+pg-hstore
+reflect-metadata
+rxjs
+sequelize
+sequelize-typescript
+swagger-ui-express
+
+License
+
+This project is UNLICENSED. 
