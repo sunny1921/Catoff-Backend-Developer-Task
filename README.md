@@ -1,8 +1,8 @@
-NestJS CRUD Project
+**NestJS CRUD Project**
 
 This project is a basic CRUD (Create, Read, Update, Delete) application built using NestJS, a progressive Node.js framework for building efficient and scalable server-side applications.
 
-Table of Contents
+**Table of Contents**
 
 NestJS CRUD Project
 Table of Contents
@@ -14,35 +14,35 @@ Dependencies
 License
 
 
-Description
+**Description**
 This project demonstrates the implementation of CRUD operations using NestJS with PostgreSQL as the database. It leverages Sequelize as the ORM and includes authentication using JWT.
 
-Installation
+**Installation**
 To get started with the project, follow these steps:
 
-Clone the repository:
+**Clone the repository:**
 git clone https://github.com/your-username/nestjs-crud.git
 
-Navigate to the project directory:
+**Navigate to the project directory:**
 cd nestjs-crud
 
-Install the dependencies:
+**Install the dependencies:**
 npm install
 
 Set up the environment variables. Create a .env file in the root directory and add your configuration settings (example provided in .env.example if available).
 
-Running the Application
+**Running the Application**
 
 To run the application in development mode:
-npm run start:dev
+**npm run start:dev**
 
 To build the application for production:
-npm run build
+**npm run build**
 
 To start the application in production mode:
-npm run start:prod
+**npm run start:prod**
 
-Scripts
+**Scripts**
 
 Here are the main scripts available in the project:
 
@@ -59,7 +59,7 @@ test:cov: Runs tests and collects coverage information.
 test:debug: Runs tests in debug mode.
 test:e2e: Runs end-to-end tests.
 
-Dependencies
+**Dependencies**
 
 The main dependencies used in this project are:
 
@@ -83,6 +83,6 @@ sequelize
 sequelize-typescript
 swagger-ui-express
 
-License
+**License**
 
 This project is UNLICENSED. 
