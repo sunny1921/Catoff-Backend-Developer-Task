@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestJS CRUD Frontend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTX+rXZUYZ8owvI1T3Fl4eM3azClQpQDO6V5j6d5WVg6sMZyV5dXt3XT1q20g60NsE8Z4Y1xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('create')">Create User</a></li>
+                    <li><a href="#" onclick="showPage('users')">Users</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="page active">
+                <h1>Welcome to NestJS CRUD Operations</h1>
+                <p>This application allows you to perform CRUD operations on users. Use the navigation above to create a user or view the list of users.</p>
+            </section>
+            <section id="create" class="page">
+                <h2>Create User</h2>
+                <div id="form" class="form">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="email" placeholder="Email">
+                    <button onclick="createUser()">Create User</button>
+                </div>
+            </section>
+            <section id="users" class="page">
+                <h2>Users</h2>
+                <div id="users-list" class="users"></div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
